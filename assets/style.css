@@ -149,5 +149,47 @@ h1 {
     font-family: 'Inter', sans-serif;
 }
 
+/************************* Media Queries *********************/
+
+@media (min-width: 768px) and (max-width: 1200px){
+    .container__informacion{
+        overflow: hidden
+    }
+    .central{
+        flex-direction: column;
+        padding: 10px 0 ;
+    }
+    .container__contrasena{
+        width: 400px;
+    }
+    .mensaje{
+        align-items:  center;
+    }
+}
+
+@media (max-width: 767px){
+    h1 {
+       font-size: 42px;
+    }
+    .texto__parrafo {
+        font-size: 22px;
+    }
+    .boton{
+        font-size: 1rem;
+    }
+    .container__informacion{
+        overflow: hidden
+    }
+    .central{
+        flex-direction: column;
+        padding: 10px 0 ;
+    }
+    .container__contrasena{
+        width: 400px;
+    }
+    .mensaje{
+        align-items:  center;
+    }
+}
 
 
