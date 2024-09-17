@@ -83,7 +83,15 @@ h1 {
     margin: 30px;
     gap: 2rem;  
 }
-
+.mensaje{
+    flex-direction: column;
+    align-items: baseline;
+}
+.mensaje p{
+   font-family: 'Inter', sans-serif;
+   padding: 10px;
+   
+}
 .texto__parrafo {
     color: #FFF;
     font-family: 'Inter';
@@ -134,7 +142,7 @@ h1 {
     background-color: #FFF;
     border: none;
     color: #1875E8;
-    margin: 50px;
+    margin: 50px 50px 0 50px;
     padding: 2rem;
     font-size: 24px;
     font-weight: 700;

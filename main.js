@@ -2,6 +2,7 @@ let cantidad = document.getElementById("cantidad");
 const cadena = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
 let password = "";
 let contrasenia = document.getElementById("contrasena");
+let msg = document.getElementById('mensaje');
 
 function genera() {
   let flagMayuscula = false;
@@ -34,9 +35,12 @@ function genera() {
     password = '';
     if (flagMayuscula && flagMinuscula && flagNumero && flagEspecial) {
       console.log("Contraseña fuerte");
+      msg.hidden = false;
+      msg.textContent = "Contraseña fuerte";
     }
     else{
-      console.log("Contraseña debil");
+      msg.hidden = false;
+      msg.textContent = "Contraseña débil";
     }
   }
 }
@@ -45,5 +49,5 @@ function limpia() {
   cantidad.value = "";
   contrasenia.value = "";
   document.getElementById('cantidad').focus();
- 
+  msg.textContent = "";
 }
