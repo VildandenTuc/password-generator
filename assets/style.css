@@ -119,10 +119,16 @@ h1 {
     height: 72px;
     box-shadow: 0px 0px 20px 0px rgba(24, 117, 232, 0.50);
     cursor: pointer;
+    transition: #1875E8 0.3s ease;
+}
+.boton:hover {
+    /* background-color: #2ecc71; */
+    background-color: #069bd1;
 }
 
 .container__contrasena {
-    width: 496px;
+    /* width: 496px; */
+    width: 760px;
     height: 72px;
     border-radius: 16px;
     background-color: #FFF;
