@@ -13,8 +13,9 @@ function genera() {
     alert("Debe ingresar un número igual o mayor de 8");
     limpia();
   } else {
+    let element = '';
     for (let i = 0; i < parseInt(cantidad.value); i++) {
-      let element = cadena[Math.floor(Math.random() * cadena.length)];
+      element = cadena[Math.floor(Math.random() * cadena.length)];
       if (element === element.toUpperCase()) {
         flagMayuscula = true;
       }
@@ -30,6 +31,7 @@ function genera() {
       password += element;
     }
     contrasenia.value = password;
+    password = '';
     if (flagMayuscula && flagMinuscula && flagNumero && flagEspecial) {
       console.log("Contraseña fuerte");
     }
