@@ -1,5 +1,5 @@
 let cantidad = document.getElementById("cantidad");
-const cadena = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+const cadena = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
 let password = "";
 let contrasenia = document.getElementById("contrasena");
 
